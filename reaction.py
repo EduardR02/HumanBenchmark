@@ -4,6 +4,7 @@ import time
 from pynput.mouse import Button, Controller
 
 pixel_x, pixel_y = 2000, 500
+mouse_x, mouse_y = 1800, 500
 
 
 # noinspection PyTypeChecker
@@ -15,7 +16,7 @@ def main():
     t = time.time()
     n = 1
     c2 = 0
-    mouse.position = (pixel_x, pixel_y)
+    mouse.position = (mouse_x, mouse_y)
     while c2 < 5:
         counter += 1
         img = np.asarray(sct.grab(monitor))
